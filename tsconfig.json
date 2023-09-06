@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true, // para resolver o problema de importação
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "noEmitOnError": true
+    },
+    "include": [ //Leia em qualquer arquivo dentro da pasta src e o arquivo server.ts
+      "./src/**/*",
+      "./server.ts"
+    ],
+  }
