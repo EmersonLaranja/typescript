@@ -10,4 +10,13 @@ var petController = new PetController_1.default();
 router.post("/", function (req, res) {
     petController.criaPet(req, res);
 });
+router.get("/", function (req, res) {
+    petController.listaPets(req, res);
+});
+router.put("/:id", function (req, res) {
+    petController.atualizaPet(req, res);
+});
+router.delete("/:id", function (req, res) {
+    petController.deletaPet(req, res);
+});
 exports.default = router;
